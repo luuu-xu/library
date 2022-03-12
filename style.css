@@ -1,0 +1,130 @@
+body {
+    margin: 0;
+    background-color: antiquewhite;
+    margin: 0;
+    font-family: 'Roboto', -apple-system, BlinkMacSystemFont, "Segoe UI", 
+    Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+.header {
+    background-color: whitesmoke;
+    padding: 30px 100px;
+    font-size: 3rem;
+    font-weight: 900;
+    text-align: center;
+    letter-spacing: 1rem;
+}
+
+.add {
+    display: grid;
+    justify-content: center;
+    background-color: antiquewhite;
+}
+
+#opener {
+    width: fit-content;
+    margin: 60px 0 30px 0;
+    padding: 1rem;
+    font-size: 1rem;
+    font-weight: 700;
+    border: none;
+    background-color: white;
+    box-shadow: 3px 3px 3px grey,
+            inset 0 0 0 5px whitesmoke;
+}
+
+#opener:hover {
+    background-color: antiquewhite;
+}
+
+#main {
+    background-color: antiquewhite;
+    padding: 30px 100px;
+    font-size: 1rem;
+    display: flex;
+    justify-content: center;
+    /* height: calc(100vh - 2rem - 60px - 3rem - 90px); */
+}
+
+#container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 50px;
+    justify-items: center;
+}
+
+.card {
+    background-color: white;
+    /* border-radius: 5%; */
+    width: 200px;
+    height: 300px;
+    padding: 20px;
+    line-height: 3;
+    text-align: center;
+    box-shadow: 3px 3px 3px grey,
+            inset 0 0 0 15px whitesmoke;
+}
+
+.title {
+    font-size: 1.4rem;
+    font-weight: 700;
+}
+
+#lightbox {
+    visibility: hidden;
+    position: absolute;
+    z-index: 100;
+    background-color: white;
+    width: 200px;
+    height: 300px;
+    padding: 20px;
+    line-height: 3;
+    text-align: center;
+    box-shadow: 3px 3px 3px grey,
+            inset 0 0 0 15px whitesmoke;
+}
+
+form {
+    font-size: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+label {
+    font-size: 1rem;
+}
+
+input {
+    box-sizing: border-box;
+    padding: 6px;
+}
+
+#title {
+    font-size: 1.4rem;
+    font-weight: 700;
+}
+
+input[type='button'] {
+    font-size: 1rem;
+    font-weight: 700;
+    padding: 12px;
+    background-color: white;
+    cursor: pointer;
+    border: none;
+    background-color: white;
+    box-shadow: 
+            inset 0 0 0 5px whitesmoke;
+}
+
+input[type='button']:hover {
+    background-color: antiquewhite;
+}
+
+#dimmer {
+    background-color: #000;
+    position: absolute;
+    opacity: .5;
+    top: 0;
+    z-index: 99;
+}
