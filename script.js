@@ -37,13 +37,13 @@ opener.onclick = function() {
     document.body.appendChild(dimmer);
 
     lightbox.style.visibility = 'visible';
-    lightbox.style.top = window.innerHeight/2 - 320 + 'px';
+    lightbox.style.top = window.innerHeight/2 - 302 + 'px';
     lightbox.style.left = window.innerWidth/2 - 120 + 'px';
     return false;
 }
 
-// document.getElementById('form').onsubmit = function() {
-document.getElementById('btn-submit').onclick = function() {
+document.getElementById('form').onsubmit = function() {
+// document.getElementById('btn-submit').onclick = function() {
     const title = document.getElementById('title').value;
     const author = document.getElementById('author').value;
     const pages = document.getElementById('pages').value;
@@ -79,12 +79,10 @@ document.getElementById('btn-submit').onclick = function() {
             btnRead.className = 'btn-unread';
             btnRead.innerHTML = 'Not Read';
             myLibrary[arrayIndex].isRead = false;
-            // console.log(myLibrary);
         } else {
             btnRead.className = 'btn-read';
             btnRead.innerHTML = 'Read';
             myLibrary[arrayIndex].isRead = true;
-            // console.log(myLibrary);
         }
     });
 
@@ -116,6 +114,8 @@ document.getElementById('btn-submit').onclick = function() {
     console.log(myLibrary);
     return false;
 }
+
+
 
 // myLibrary.forEach(function(book) {
 //     const cardDiv = document.createElement('div');
