@@ -1,6 +1,8 @@
 # library
 Library project from The Odin Project.
 
+Live: https://luuu-xu.github.io/library/
+
 The project is finished.
 Figuring out the JS part is not too hard, had some problems when I am trying to index each book added, in order to target its read and delete button to change its object's properties' values.
 After some experiments, I have decided to target each book by setting the card container in html showing this book's id to be the title of the book. Therefore its buttons can work out well.
